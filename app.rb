@@ -29,3 +29,6 @@ get '/name' do
     erb :name
   end
 end
+post '/search' do
+  redirect "http://#{params[:search]}.com"
+end
